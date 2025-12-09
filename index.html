@@ -16,9 +16,10 @@
             font-family: 'Poppins', sans-serif;
             background: #ffffff;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            min-height: 100dvh;
             overflow: hidden;
         }
 
@@ -114,8 +115,10 @@
         <div class="message-container" id="message">
             <p>
                 Halaman ini adalah contoh pratinjau.<br>
-                Situs web asli Chiori Boutique saat ini sedang dalam pengembangan.
+                Situs web asli Chiori Boutique saat ini sedang dalam pengembangan.<br>
             </p>
+            <br>
+            <p>beberapa halaman hanya muncul sebagai referensi, tidak ada fitur yang berfungsi.</p>
         </div>
 
     </div>
@@ -137,12 +140,12 @@
         // Message fade-out setelah tampil 2.3s
         setTimeout(() => {
             message.classList.add('fade-out-message');
-        }, 1700 + 2300);
+        }, 1700 + 3500);
 
         // Redirect ke home
         setTimeout(() => {
             window.location.href = 'home.html';
-        }, 1700 + 2300 + 400);
+        }, 1700 + 2800 + 400);
     </script>
 </body>
 </html>
